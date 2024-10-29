@@ -1,0 +1,28 @@
+body {
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+nav,
+aside {
+    background-color: #f4f1d0;
+}
+
+header {
+    background-color: #FFA500 !important;
+}
+
+footer {
+    background-color: #2c1b18 !important;
+}
