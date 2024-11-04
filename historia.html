@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon's World</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="./img/logoPokeball.png" alt="Logo Pokémon">
+        <h1>Pokémon's World</h1>
+        <button id="controlAudio" onclick="toggleAudio()">Pausar</button>
+    </header>
+    <div class=".container-fluid">
+        <div class="row">
+            <aside class="col-2 asideIzquierdo">
+                <div>
+                    <div>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M101.1 24.88L135.5 157l88.1 4.8-3-17.2-1.9-11.2 123.3 7.4 4.9 27.8 75.9 4.2-32.5-124.62-289.2-23.3zm-18.82 1.6c-30.5 11.9-55.7 53.1-49.8 75.32l3.3 11.8c.6-1.8 1.3-3.5 2.1-5.3 9.9-23.72 26.5-46.82 50.3-58.92l-5.9-22.9zm10.8 41.6c-16.7 10-29.9 28.1-38 47.42-5.2 12.5-8 25.6-8.7 36.5l17.46 63.5c12.8-21.2 30.19-42.3 53.96-52.4L93.08 68.08zM240.3 152.8l20.2 117.4 87 4.3L326.8 158l-86.5-5.2zm46.8 21.2a25.29 20.33 24.87 0 1 2.4 0 25.29 20.33 24.87 0 1 27.2 22.4 25.29 20.33 24.87 0 1-13.2 19.2l20.8 37.5-48.7-2.2 10.9-36.1a25.29 20.33 24.87 0 1-18.5-20.6 25.29 20.33 24.87 0 1 19.1-20.2zm-146.8 1.3l15 57.6 81.2 3.4-9.8-56.2-86.4-4.8zm-17.9 5.6c-21.8 10.6-39.52 36.3-51.73 59.4l12.46 45.3c10.27-15.7 23.97-32.8 53.57-49.9l-14.3-54.8zm227.8 5.9l9.7 54.7 81.7 3.5-14.1-53.9-77.3-4.3zM160 251.1l31.2 119.6 289.2 23.2-34-130.6-83.3-3.5 6 33.9-123.8-6.3-5.7-32.9-79.6-3.4zm-18.6 2.7c-32 19.4-39.7 35.9-51.79 55.4l21.49 78.1c.3-.5.6-1.1.9-1.6 10.6-19.3 27.8-37.7 51.1-48.5l-21.7-83.4zM168 355.7c-17.7 9.1-31.2 23.7-39.6 39-4.5 8.1-7.3 16.3-8.7 23.7l11.7 42.4 1.6.2c-3.8-27.6 11.4-60.5 41.3-81.1l-6.3-24.2zm26.3 34c-32.6 17.3-46.5 52.4-41.8 72.9l289.8 24.5c-5.3-7.8-8.7-17.9-8.6-28.5l-22.4-9 46.3-7.3-13.5-12.8c5.6-7 13.7-13.1 24.9-17.7l-274.7-22.1z"></path></svg>
+                        <a href="#historia">Historia</a>
+                    </div>
+                        <a href="#tipos">Tipos de Pokémon</a>
+                        <a href="https://www.pokemon.com/es/" target="_blank">Sitio Oficial</a>
+                </div>
+            </aside>
+
+            <main class="col-10">
+
+                <audio id="miAudio" 
+                 loop>
+                    <source src="./audio/cancionPokemon.mp3" type="audio/mp3">
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>
+                
+                <section id="historia">
+                    <h2>Historia de Pokémon</h2>
+                    <p>Los orígenes de Pokémon se remontan a la adolescencia de Satoshi Tajiri en su natal Machida,
+                        Tokio, cuando exploraba prados y estanques aledaños en búsqueda de insectos y otras pequeñas
+                        criaturas, como renacuajos y cangrejos, para coleccionarlas, estudiarlas y clasificarlas en
+                        un cuaderno que le habían obsequiado sus padres. Mientras cursaba su segundo año de
+                        educación secundaria, Tajiri comenzó a interesarse en los videojuegos arcade después
+                        de inaugurarse un salón recreativo cerca de su hogar, afición que continuó durante su
+                        formación universitaria en el Tokyo College of Technology, en los años 1980. En marzo de
+                        1983, a sus diecisiete años de edad, publicó la primera
+                        edición de una revista dōjinshi a la cual tituló Game Freak, en alusión a la
+                        película estadounidense Freaks (1932) con la cual estaba fascinado en ese entonces. Su
+                        contenido, escrito a mano por el propio Tajiri, versaba principalmente sobre reseñas y guías
+                        de videojuegos y tenía un costo de 200 JPY. En ese período, conoció a Tsunekazu Ishihara
+                        y al artista de manga Ken Sugimori; este último lo habría de ayudar con la ilustración de
+                        las siguientes ediciones de Game Freak, hasta el cese de su publicación a finales de la
+                        misma década. Para entonces, Tajiri ya era un reconocido periodista de videojuegos en
+                        Japón.</p>
+                        <img class="imgGif" src="https://steamuserimages-a.akamaihd.net/ugc/853848825685979066/80F37D1D2EAFACA6512CAA9F1F340FAD3733C94E/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="">
+                    <p>Con el éxito de la consola NES, los dos decidieron crear algo innovador para la consola, y
+                        Tajiri decidió hacer que Game Freak se convirtiera en una compañía. Comenzó a trabajar en un
+                        juego de rompecabezas llamado Mendel Palace (conocido en Japón como Quinty), el cual fue
+                        lanzado en 1989, obteniendo buen éxito, lo cual marcó el principio de la historia de la
+                        compañía.</p>
+                    <p>Al año siguiente, los dos habían decidido crear un juego para la consola Game Boy. Tajiri al
+                        ver el Game Link Cable, tuvo la idea de un juego en donde se pudiera transferir información
+                        de una Game Boy a otra. Influenciado por sagas como Final Fantasy y Dragon Quest, Tajiri
+                        asoció la idea de la metamorfosis. Tajiri creó un RPG en donde los monstruos podrían
+                        evolucionar y ser transportados de una consola portátil a otra.</p>
+                    <p>El proyecto fue enviado a Nintendo. Mientras que Tajiri era quien tenía la idea principal,
+                        Sugimori era el encargado de los diseños de los monstruos. Así mismo, recibieron consejos
+                        por parte de Shigeru Miyamoto (creador de Mario Bros.) para mejorar el juego, que en ese
+                        entonces recibía el nombre de Capsule Monster.</p>
+                    <p>La producción de este proyecto duró cinco años. En aquel tiempo, la consola Game Boy entró
+                        en declive por la escasez de nuevos juegos, debido a que la compañía Nintendo ya no tenía
+                        más ideas para la consola portátil. Por otro lado, Game Freak estuvo con carencia de
+                        acciones y recursos, por lo que su situación entró en jaque. Luego de esto, el proyecto de
+                        Tajiri fue renombrado como Pocket Monsters. En febrero de 1996 se lanzaron al mercado Pocket
+                        Monsters Aka and Midori ("Red" y "Green") Inicialmente el juego no tuvo éxito, pero al
+                        alcanzar un año, se había llegado a la marca de millón de copias.</p>
+                    <p>Al ver esto, Nintendo decidió enviar la serie a occidente. El nombre fue abreviado a Pokémon
+                        debido a que había una serie de Mattel conocida como Monster in My Pocket. Los juegos
+                        Pokémon Red y Blue se convirtieron en un éxito en los Estados Unidos, con más de 200.000
+                        copias vendidas en la primera semana.</p>
+
+                    <img src="https://areajugones.sport.es/wp-content/uploads/2021/03/resumen-anime-de-pokemon.jpeg" alt="Historia de Pokémon" width="100%">
+                </section>
+
+            </main>
+
+            <aside class="col-2 divPublicidad">
+                <div>
+            
+                    <h2>Publicidad</h2>
+                    <div>
+                        <img src="https://publish.one37pm.net/wp-content/uploads/2023/01/Most_Powerful_Pokemon_cards_univ.jpg?fit=1600%2C707"
+                            alt="Publicidad Pokémon" width="100%">
+                    </div>
+                    <div>
+                        <img src="https://staticg.sportskeeda.com/editor/2023/11/31f7a-16992880898060-1920.jpg?w=640"
+                            alt="Publicidad Pokémon" width="100%">
+                    </div>
+            
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-96Jp8JLZ4FoltEQ0h43G_pg3x6h66p-up5AlJtVgTyBDDGSX7V8YmRdytXhBZ0XGcRU&usqp=CAU"
+                            alt="Publicidad Pokémon" width="100%">
+                    </div>
+            
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq9-Bsy26urE0yhSS96ZNESjhKmzvzEHnks12W0q_2vyyYUJWx08BKXGGZd35HaB2NgGM&usqp=CAU"
+                            alt="Publicidad Pokémon" width="100%">
+                    </div>
+            
+                </div>
+            </aside>
+            </div>
+    </div>
+
+    
+    <footer>
+        <p>© 2024 Pokémon's World. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>

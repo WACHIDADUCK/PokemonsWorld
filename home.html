@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon's World</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="./img/logoPokeball.png" alt="Logo Pokémon">
+        <h1>Pokémon's World</h1>
+        <button id="controlAudio" onclick="toggleAudio()">Pausar</button>
+    </header>
+    <div class=".container-fluid">
+        <div class="row">
+            <aside class="col-2 asideIzquierdo">
+                <div>
+                        <a href="./historia.html">Historia</a>
+                        <a href="./pokedex.html">Pokedex</a>
+                        <a href="./pokemons.html">Tipos de Pokémon</a>
+                        <a href="https://www.pokemon.com/es/" target="_blank">Sitio Oficial</a>
+                </div>
+            </aside>
+
+            <main class="col-10">
+
+                <audio id="miAudio" 
+                 loop>
+                    <source src="./audio/cancionPokemon.mp3" type="audio/mp3">
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>
+                
+                <section id="historia">
+                    <h2>Historia de Pokémon</h2>
+                    <p>Pokémon es una franquicia japonesa creada por Satoshi Tajiri y Ken Sugimori, que comenzó como un
+                        videojuego de rol en 1996. Con el tiempo, se ha expandido a una serie de anime, cartas
+                        coleccionables, películas y mucho más, convirtiéndose en un fenómeno cultural global.</p>
+                    <img src="https://areajugones.sport.es/wp-content/uploads/2021/03/resumen-anime-de-pokemon.jpeg" alt="Historia de Pokémon" width="100%">
+                </section>
+
+                <section id="tipos">
+                    <h2 class="card-title">Tipos de Pokémon</h2>
+
+                    <div class="card " style="max-width: 540px;">
+                        <div class="row g-0">
+                            <!-- Imagen a la izquierda -->
+                            <div class="col-md-4">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMxpLi6eH7LNKeatcxc6qAgDXEW42OELKIfg&s" alt="Squirtle" class="img-fluid rounded-start">
+                            </div>
+                            <!-- Título y descripción a la derecha -->
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-subtitle mb-2 text-muted">Tipo Agua</h3>
+                                    <p class="card-text">Los Pokémon de tipo Agua son fuertes contra los de tipo Fuego.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  <!-- Tarjeta Tipo Fuego -->
+        <div class="card2 mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+        
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-subtitle mb-2 text-muted">Tipo Fuego</h3>
+                        <p class="card-text">Los Pokémon de tipo Fuego son poderosos contra los de tipo Planta.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xVXM-PWRoJjaj9stS4xyuQDAFHOqsyiheA&s" alt="Charmander" class="img-fluid rounded-start">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta Tipo Planta -->
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF87p-IpVoNKZ5W8Fdy6d7BC5K099187l_GA&s" alt="Bulbasaur" class="img-fluid rounded-start">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-subtitle mb-2 text-muted">Tipo Planta</h3>
+                        <p class="card-text">Los Pokémon de tipo Planta tienen ventajas sobre los de tipo Agua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+             
+                </section>
+            </main>
+
+            <aside class="col-2 divPublicidad">
+                <div>
+            
+                    <h2>Publicidad</h2>
+                    <div>
+                        <img src="https://publish.one37pm.net/wp-content/uploads/2023/01/Most_Powerful_Pokemon_cards_univ.jpg?fit=1600%2C707"
+                            alt="Publicidad Pokémon" width="100%">
+                    </div>
+                    <div>
+                        <img src="https://staticg.sportskeeda.com/editor/2023/11/31f7a-16992880898060-1920.jpg?w=640"
+                            alt="Publicidad Pokémon" width="100%">
+                    </div>
+            
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-96Jp8JLZ4FoltEQ0h43G_pg3x6h66p-up5AlJtVgTyBDDGSX7V8YmRdytXhBZ0XGcRU&usqp=CAU"
+                            alt="Publicidad Pokémon" width="100%">
+                    </div>
+            
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq9-Bsy26urE0yhSS96ZNESjhKmzvzEHnks12W0q_2vyyYUJWx08BKXGGZd35HaB2NgGM&usqp=CAU"
+                            alt="Publicidad Pokémon" width="100%">
+                    </div>
+            
+                </div>
+            </aside>
+            </div>
+    </div>
+
+    
+    <footer>
+        <img width="30px" src="./img/creativesComons.png" alt="">
+        <p>© 2024 Pokémon's World. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
