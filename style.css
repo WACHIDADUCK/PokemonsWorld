@@ -4,9 +4,6 @@ body {
     margin: 0;
 }
 
-.logo{
-
-}
 
 header {
     background-color: red;
@@ -54,9 +51,7 @@ footer {
 #youtubeIframe{
     display: none;
 }
-.asideIzquierdo{
 
-}
 
 .asideIzquierdo a {
     background-color: yellow; /* Fondo amarillo */
