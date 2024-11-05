@@ -5,45 +5,80 @@
     <meta charset="UTF-8">
     <title>Pokémon's World</title>
     <link rel="stylesheet" href="./style.css">
-    
+
 </head>
 
 <body>
-
     <header>
-        <img class="logo" src="./img/logoPokeball.png" alt="Logo Pokémon">
         <h1>Pokémon's World</h1>
-        <button id="controlAudio" onclick="toggleAudio()">Pausar</button>
+        <img src="./img/botonpokeball.png" alt="Botón Pokeball" class="pokeball-image">
     </header>
-    <div class=".container-fluid">
+    <div class="container-fluid">
         <div class="row">
             <aside class="col-2 asideIzquierdo">
                 <div>
-                    <div>
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M101.1 24.88L135.5 157l88.1 4.8-3-17.2-1.9-11.2 123.3 7.4 4.9 27.8 75.9 4.2-32.5-124.62-289.2-23.3zm-18.82 1.6c-30.5 11.9-55.7 53.1-49.8 75.32l3.3 11.8c.6-1.8 1.3-3.5 2.1-5.3 9.9-23.72 26.5-46.82 50.3-58.92l-5.9-22.9zm10.8 41.6c-16.7 10-29.9 28.1-38 47.42-5.2 12.5-8 25.6-8.7 36.5l17.46 63.5c12.8-21.2 30.19-42.3 53.96-52.4L93.08 68.08zM240.3 152.8l20.2 117.4 87 4.3L326.8 158l-86.5-5.2zm46.8 21.2a25.29 20.33 24.87 0 1 2.4 0 25.29 20.33 24.87 0 1 27.2 22.4 25.29 20.33 24.87 0 1-13.2 19.2l20.8 37.5-48.7-2.2 10.9-36.1a25.29 20.33 24.87 0 1-18.5-20.6 25.29 20.33 24.87 0 1 19.1-20.2zm-146.8 1.3l15 57.6 81.2 3.4-9.8-56.2-86.4-4.8zm-17.9 5.6c-21.8 10.6-39.52 36.3-51.73 59.4l12.46 45.3c10.27-15.7 23.97-32.8 53.57-49.9l-14.3-54.8zm227.8 5.9l9.7 54.7 81.7 3.5-14.1-53.9-77.3-4.3zM160 251.1l31.2 119.6 289.2 23.2-34-130.6-83.3-3.5 6 33.9-123.8-6.3-5.7-32.9-79.6-3.4zm-18.6 2.7c-32 19.4-39.7 35.9-51.79 55.4l21.49 78.1c.3-.5.6-1.1.9-1.6 10.6-19.3 27.8-37.7 51.1-48.5l-21.7-83.4zM168 355.7c-17.7 9.1-31.2 23.7-39.6 39-4.5 8.1-7.3 16.3-8.7 23.7l11.7 42.4 1.6.2c-3.8-27.6 11.4-60.5 41.3-81.1l-6.3-24.2zm26.3 34c-32.6 17.3-46.5 52.4-41.8 72.9l289.8 24.5c-5.3-7.8-8.7-17.9-8.6-28.5l-22.4-9 46.3-7.3-13.5-12.8c5.6-7 13.7-13.1 24.9-17.7l-274.7-22.1z"></path></svg>
-                        <a href="#historia">Historia</a>
-                    </div>
-                        <a href="#tipos">Tipos de Pokémon</a>
-                        <a href="https://www.pokemon.com/es/" target="_blank">Sitio Oficial</a>
+                    <a href="./home.html" class=" bg0 fondo oscurecer">
+                        <div class="botonAside flexCentrado">
+                            <div class="">
+                                <div class="flex items-center justify-center size-10  bg-white/10 rounded-lg text-2xl !backdrop-blur-sm"><svg stroke="currentColor" fill="currentColor" stroke-width="0" t="1569683657482" viewBox="0 0 1024 1024" version="1.1" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><defs></defs><path d="M952 474H829.8C812.5 327.6 696.4 211.5 550 194.2V72c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v122.2C327.6 211.5 211.5 327.6 194.2 474H72c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h122.2C211.5 696.4 327.6 812.5 474 829.8V952c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V829.8C696.4 812.5 812.5 696.4 829.8 550H952c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8zM512 756c-134.8 0-244-109.2-244-244s109.2-244 244-244 244 109.2 244 244-109.2 244-244 244z"></path><path d="M512 392c-32.1 0-62.1 12.4-84.8 35.2-22.7 22.7-35.2 52.7-35.2 84.8s12.5 62.1 35.2 84.8C449.9 619.4 480 632 512 632s62.1-12.5 84.8-35.2C619.4 574.1 632 544 632 512s-12.5-62.1-35.2-84.8C574.1 404.4 544.1 392 512 392z"></path></svg></div>
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M3 12h6"></path>
+                                    <path d="M15 12h6"></path>
+                                </svg></div>
+                            <h2>Home</h2>
+                        </div>
+                    </a>
+
+                    <a href="./historia.html" class=" bg0 fondo oscurecer">
+                        <div class="botonAside flexCentrado">
+                            <div class=""><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                    stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M3 12h6"></path>
+                                    <path d="M15 12h6"></path>
+                                </svg></div>
+                            <h2>Historia</h2>
+                        </div>
+                    </a>
+
+                    <a href="./pokedex.html" class=" bg1 fondo">
+                        <div class="botonAside flexCentrado">
+                            <div class="">
+                                <div class="flex items-center justify-center size-10  bg-white/10 rounded-lg text-2xl !backdrop-blur-sm"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M101.1 24.88L135.5 157l88.1 4.8-3-17.2-1.9-11.2 123.3 7.4 4.9 27.8 75.9 4.2-32.5-124.62-289.2-23.3zm-18.82 1.6c-30.5 11.9-55.7 53.1-49.8 75.32l3.3 11.8c.6-1.8 1.3-3.5 2.1-5.3 9.9-23.72 26.5-46.82 50.3-58.92l-5.9-22.9zm10.8 41.6c-16.7 10-29.9 28.1-38 47.42-5.2 12.5-8 25.6-8.7 36.5l17.46 63.5c12.8-21.2 30.19-42.3 53.96-52.4L93.08 68.08zM240.3 152.8l20.2 117.4 87 4.3L326.8 158l-86.5-5.2zm46.8 21.2a25.29 20.33 24.87 0 1 2.4 0 25.29 20.33 24.87 0 1 27.2 22.4 25.29 20.33 24.87 0 1-13.2 19.2l20.8 37.5-48.7-2.2 10.9-36.1a25.29 20.33 24.87 0 1-18.5-20.6 25.29 20.33 24.87 0 1 19.1-20.2zm-146.8 1.3l15 57.6 81.2 3.4-9.8-56.2-86.4-4.8zm-17.9 5.6c-21.8 10.6-39.52 36.3-51.73 59.4l12.46 45.3c10.27-15.7 23.97-32.8 53.57-49.9l-14.3-54.8zm227.8 5.9l9.7 54.7 81.7 3.5-14.1-53.9-77.3-4.3zM160 251.1l31.2 119.6 289.2 23.2-34-130.6-83.3-3.5 6 33.9-123.8-6.3-5.7-32.9-79.6-3.4zm-18.6 2.7c-32 19.4-39.7 35.9-51.79 55.4l21.49 78.1c.3-.5.6-1.1.9-1.6 10.6-19.3 27.8-37.7 51.1-48.5l-21.7-83.4zM168 355.7c-17.7 9.1-31.2 23.7-39.6 39-4.5 8.1-7.3 16.3-8.7 23.7l11.7 42.4 1.6.2c-3.8-27.6 11.4-60.5 41.3-81.1l-6.3-24.2zm26.3 34c-32.6 17.3-46.5 52.4-41.8 72.9l289.8 24.5c-5.3-7.8-8.7-17.9-8.6-28.5l-22.4-9 46.3-7.3-13.5-12.8c5.6-7 13.7-13.1 24.9-17.7l-274.7-22.1z"></path></svg></div>
+                                    
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M3 12h6"></path>
+                                    <path d="M15 12h6"></path>
+                                </svg></div>
+                            <h2>Pokedex</h2>
+                        </div>
+                    </a>
+
+                    <a href="./pokemons.html" class=" bg2 fondo">
+                        <div class="botonAside flexCentrado">
+                            <div class="flex items-center justify-center size-10  bg-white/10 rounded-lg text-2xl !backdrop-blur-sm"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z"></path></svg></div>
+                            <h2>Tipos de Pokémon</h2>
+                        </div>
+                    </a>
+
+                    <a href="https://www.pokemon.com/es/" class=" bg1 fondo">
+                        <div class="botonAside flexCentrado">
+                            <div class="flex items-center justify-center size-10  bg-white/10 rounded-lg text-2xl !backdrop-blur-sm"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H88c-13.255 0-24 10.745-24 24v8H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h472c26.51 0 48-21.49 48-48V88c0-13.255-10.745-24-24-24zM56 400a8 8 0 0 1-8-8V144h16v248a8 8 0 0 1-8 8zm236-16H140c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm208 0H348c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm-208-96H140c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm208 0H348c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm0-96H140c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h360c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12z"></path></svg></div>
+                            <h2>Sitio Oficial</h2>
+                        </div>
+                    </a>
+
                 </div>
             </aside>
 
             <main class="col-10">
-
-                <audio id="miAudio" 
-                 loop>
-                    <source src="./audio/cancionPokemon.mp3" type="audio/mp3">
-                    Tu navegador no soporta la reproducción de audio.
-                </audio>
-                
-                <section id="historia">
-                    <h2>Historia de Pokémon</h2>
-                    <p>Pokémon es una franquicia japonesa creada por Satoshi Tajiri y Ken Sugimori, que comenzó como un
-                        videojuego de rol en 1996. Con el tiempo, se ha expandido a una serie de anime, cartas
-                        coleccionables, películas y mucho más, convirtiéndose en un fenómeno cultural global.</p>
-                    <img src="https://areajugones.sport.es/wp-content/uploads/2021/03/resumen-anime-de-pokemon.jpeg" alt="Historia de Pokémon" width="100%">
-                </section>
-
                 <section id="tipos">
                     <h2 class="card-title">Tipos de Pokémon</h2>
 
@@ -51,56 +86,60 @@
                         <div class="row g-0">
                             <!-- Imagen a la izquierda -->
                             <div class="col-md-4">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMxpLi6eH7LNKeatcxc6qAgDXEW42OELKIfg&s" alt="Squirtle" class="img-fluid rounded-start">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMxpLi6eH7LNKeatcxc6qAgDXEW42OELKIfg&s"
+                                    alt="Squirtle" class="img-fluid rounded-start">
                             </div>
                             <!-- Título y descripción a la derecha -->
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h3 class="card-subtitle mb-2 text-muted">Tipo Agua</h3>
-                                    <p class="card-text">Los Pokémon de tipo Agua son fuertes contra los de tipo Fuego.</p>
+                                    <p class="card-text">Los Pokémon de tipo Agua son fuertes contra los de tipo Fuego.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                  <!-- Tarjeta Tipo Fuego -->
-        <div class="card2 mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-        
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h3 class="card-subtitle mb-2 text-muted">Tipo Fuego</h3>
-                        <p class="card-text">Los Pokémon de tipo Fuego son poderosos contra los de tipo Planta.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xVXM-PWRoJjaj9stS4xyuQDAFHOqsyiheA&s" alt="Charmander" class="img-fluid rounded-start">
-                </div>
-            </div>
-        </div>
 
-        <!-- Tarjeta Tipo Planta -->
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF87p-IpVoNKZ5W8Fdy6d7BC5K099187l_GA&s" alt="Bulbasaur" class="img-fluid rounded-start">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h3 class="card-subtitle mb-2 text-muted">Tipo Planta</h3>
-                        <p class="card-text">Los Pokémon de tipo Planta tienen ventajas sobre los de tipo Agua.</p>
+                    <!-- Tarjeta Tipo Fuego -->
+                    <div class="card2 mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+
+                            <div class="col-md-8 ">
+                                <div class="card-body">
+                                    <h3 class="card-subtitle mb-2 text-muted">Tipo Fuego</h3>
+                                    <p class="card-text">Los Pokémon de tipo Fuego son poderosos contra los de tipo
+                                        Planta.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xVXM-PWRoJjaj9stS4xyuQDAFHOqsyiheA&s"
+                                    alt="Charmander" class="img-fluid rounded-start">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-             
+
+                    <!-- Tarjeta Tipo Planta -->
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF87p-IpVoNKZ5W8Fdy6d7BC5K099187l_GA&s"
+                                    alt="Bulbasaur" class="img-fluid rounded-start">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-subtitle mb-2 text-muted">Tipo Planta</h3>
+                                    <p class="card-text">Los Pokémon de tipo Planta tienen ventajas sobre los de tipo
+                                        Agua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
             </main>
 
             <aside class="col-2 divPublicidad">
                 <div>
-            
-                    <h2>Publicidad</h2>
                     <div>
                         <img src="https://publish.one37pm.net/wp-content/uploads/2023/01/Most_Powerful_Pokemon_cards_univ.jpg?fit=1600%2C707"
                             alt="Publicidad Pokémon" width="100%">
@@ -109,25 +148,26 @@
                         <img src="https://staticg.sportskeeda.com/editor/2023/11/31f7a-16992880898060-1920.jpg?w=640"
                             alt="Publicidad Pokémon" width="100%">
                     </div>
-            
+
                     <div>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-96Jp8JLZ4FoltEQ0h43G_pg3x6h66p-up5AlJtVgTyBDDGSX7V8YmRdytXhBZ0XGcRU&usqp=CAU"
                             alt="Publicidad Pokémon" width="100%">
                     </div>
-            
+
                     <div>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq9-Bsy26urE0yhSS96ZNESjhKmzvzEHnks12W0q_2vyyYUJWx08BKXGGZd35HaB2NgGM&usqp=CAU"
                             alt="Publicidad Pokémon" width="100%">
                     </div>
-            
+
                 </div>
             </aside>
-            </div>
+        </div>
     </div>
 
-    
+
     <footer>
-        <p>© 2024 Pokémon's World. Todos los derechos reservados.</p>
+        <img width="30px" height="30px" src="./img/creativesComons.png" alt="">
+        <p>2024 Pokémon's World. Todos los derechos reservados FabGui SL.</p>
     </footer>
 
     <script src="./script.js"></script>

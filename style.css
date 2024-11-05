@@ -1,9 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
     margin: 0;
 }
-
+ h2{
+    margin: 0px;
+ }
 
 header {
     background-color: red;
@@ -11,15 +12,33 @@ header {
     text-align: center;
     position: relative;
     border-bottom: 20px solid black;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 
 header img {
-    width: 50px;
+    width: 100px;
     height: auto;
     position: absolute;
     left: 20px;
     top: 15px;
+}
+
+.pokeball-image {
+    position: absolute;
+    top: 98px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Ajusta el tamaño según lo necesites */
+}
+
+.container-fluid {
+    background-image: url("./img/fondo.png");
+    background-size: cover; /* Asegura que la imagen cubra todo el área del main */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px; /* Ajusta el espacio interno si lo necesitas */
 }
 h1 {
     font-size: 2.5em;
@@ -30,7 +49,6 @@ h1 {
 }
 aside {
     padding: 15px;
-    background-color: #f5f5f5;
 }
 .col-2 {
     width: 20%;
@@ -39,14 +57,7 @@ aside {
     width: 60%;
     padding: 20px;
 }
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    bottom: 0;
-}
+
 
 #youtubeIframe{
     display: none;
@@ -54,37 +65,50 @@ footer {
 
 
 .asideIzquierdo a {
-    background-color: yellow; /* Fondo amarillo */
-    color: black; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    font-weight: bold; /* Texto en negrita */
-    margin-top: 20%;
-    padding: 10px 20px;
-    text-align: center;
+    text-decoration: none;
+    font-weight: bold; 
+    margin-top: 30%;
 }
+
 
 .asideIzquierdo div{
     position: sticky;
     top: 0; 
-
     display: flex;
     flex-direction: column;
     text-align: left;
 }
+.botonAside{
+    color: rgb(255, 255, 255); /* Color del texto */
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 20%;
+}
+
 
 .divPublicidad div{
-    margin-top: 20px;
+    margin-top: 40px;
     position: sticky;
     top: 0; 
 }
 
+.flexCentrado{
+    display: flex;
+    align-items: center;
+}
+
 .card{
+    margin-top: 40px;
     text-align: center;
 }
 
 .card img{
     border-top-left-radius: 20px; 
     border-bottom-left-radius: 20px;
+}
+.card2 {
+    margin-top: 40px;
+
 }
 
 .card2 img{
@@ -97,14 +121,108 @@ footer {
 }
 
 
-
 footer{
     display: flex;
     justify-content: center;
-    background-color: red;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
     color: black;
     font-weight: bold;
+    border-top: 20px solid black;
+    padding: 20px;
 }
 footer img{
     margin-right: 20px;
+}
+
+.fondo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Bordes redondeados */
+    text-align: center;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.fondo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* La imagen cubrirá el div */
+    background-position: center;
+    transition: all 0.3s ease;
+    filter: brightness(0.5); /* Oscurece la imagen */
+    z-index: 0; /* Capa detrás del contenido */
+}
+
+.bg0::before{
+    background-image: url('./img/bg0.webp'); /* Cambia esto por la ruta de tu imagen */
+}
+.bg1::before{
+    background-image: url('./img/bg1.webp'); /* Cambia esto por la ruta de tu imagen */
+}
+.bg2::before{
+    background-image: url('./img/bg3.webp'); /* Cambia esto por la ruta de tu imagen */
+}
+.bg3::before{
+    background-image: url('./img/bg4.webp'); /* Cambia esto por la ruta de tu imagen */
+}
+
+.fondo:hover {
+    transform: scale(1.05); /* Aumentar el tamaño al hacer hover */
+}
+
+.fondo:hover::before {
+    opacity: 0.9; /* Aclarar la imagen al hacer hover */
+}
+
+svg{
+    width: 2em;
+    height: 2em;
+}
+
+
+.botonAudio {
+    margin: 30px 0px;
+    display: flex;
+    justify-self: center;
+    background-color: #FFD700; /* Fondo amarillo */
+    color: #333; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición para hover */
+}
+
+.botonAudio:hover {
+    background-color: #FFC107; /* Fondo amarillo más claro al hacer hover */
+    transform: scale(1.05); /* Aumenta un poco el tamaño al hacer hover */
+}
+.redondeado{
+    border-radius: 20px;
+}
+
+#historia {
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Esto crea un aspecto de 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
